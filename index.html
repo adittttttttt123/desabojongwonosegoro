@@ -3,423 +3,536 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Desa Bojong</title>
+  <title>Portal Resmi Desa Bojong - Wonosegoro, Boyolali</title>
   <link rel="icon" type="image/png" href="img/favicon.ico"/>
 
   <!-- Bootstrap CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet">
-
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="css/custom.css">
+  <!-- Core Theme CSS (Agency) -->
   <link rel="stylesheet" href="css/agency.min.css">
+
+  <!-- Modern Premium Custom CSS Overrides -->
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 <body id="page-top">
-  <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
-  <div class="container">
-    <!-- Logo Desa Boyolali -->
-    <a class="navbar-brand" href="#page-top">
-      <img src="img/logo.png" alt="Logo Boyolali" style="height: 60px; width: 60px; object-fit: contain; margin-right: 10px;">
-      <span class="text-uppercase">Desa Bojong</span>
-    </a>
-    <!-- Tombol Toggle untuk tampilan mobile -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <!-- Daftar Navigasi -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">Struktur</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#profil-desa">Profil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#berita-desa">Berita</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#galeri">Galeri</a>
-        </li>
-      </ul>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top">
+        <img src="img/logo.png" alt="Logo Boyolali">
+        <span>Desa Bojong</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Struktur</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#profil-desa">Profil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#berita-desa">Berita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#galeri">Galeri</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <!-- Header -->
+  <!-- Hero Header -->
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Selamat Datang</div>
-        <div class="intro-heading text-uppercase">Desa Bojong</div>
-        <a class="btn btn-warning btn-xl text-uppercase js-scroll-trigger" href="#about">Selengkapnya</a>
+        <div class="intro-lead-in">Selamat Datang di Portal Resmi</div>
+        <div class="intro-heading">DESA BOJONG</div>
+        <a class="btn btn-warning btn-xl text-uppercase js-scroll-trigger" href="#profil-desa">Jelajahi Profil</a>
       </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="mouse-scroll"></div>
     </div>
   </header>
 
   <!-- Struktur Pemerintah Desa Bojong -->
   <section id="about">
-    <div class="container">
-      <div class="text-center">
+    <div class="container text-center">
+      <div class="reveal">
         <h2 class="section-heading text-uppercase">Struktur Pemerintah Desa</h2>
-        <h3 class="section-subheading text-muted">Desa Bojong, Kec. Wonosegoro, Kab. Boyolali</h3>
+        <h3 class="section-subheading text-muted">Aparatur Pemerintahan Desa Bojong, Kec. Wonosegoro, Kab. Boyolali</h3>
       </div>
-      <div class="text-center">
-        <img class="img-fluid struktur-desa" src="img/struktur-pemerintah-desa.jpg" alt="Struktur Pemerintah Desa Bojong">
+      <div class="reveal delay-200 mt-4">
+        <div class="struktur-card-wrapper">
+          <img class="img-fluid struktur-desa" src="img/struktur-pemerintah-desa.jpg" alt="Struktur Pemerintah Desa Bojong" data-toggle="modal" data-target="#imageLightboxModal">
+        </div>
       </div>
     </div>
   </section>
+
   <!-- Profil Desa -->
-<section id="profil-desa" class="py-5 bg-light">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-heading text-uppercase">Profil Desa</h2>
-      <p class="section-subheading text-muted">Informasi lengkap tentang Desa Bojong</p>
-    </div>
-    <div class="row">
-
-      <!-- Wilayah -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 profile-card" data-toggle="modal" data-target="#modalIframe" data-url="wilayah.html">
-          <img src="img/profil/wilayah.png"  class="card-img-top" alt="Wilayah Desa">
-          <div class="card-body text-center">
-            <h5 class="card-title">Wilayah Desa</h5>
-            <p class="text-justify">
-      <strong>Desa Bojong</strong> merupakan salah satu desa yang terletak di wilayah administratif 
-          <strong>Kecamatan Wonosegoro, Kabupaten Boyolali, Provinsi Jawa Tengah</strong>. Secara geografis, 
-          Desa Bojong berada pada koordinat <strong>7°16′9″ Lintang Selatan</strong> dan <strong>110°41′19″ Bujur Timur</strong>, 
-          yang menempatkannya di kawasan dataran tinggi dengan kondisi alam yang relatif sejuk dan tanah yang subur.
-    </p>
-    <p>
-          Wilayah Desa Bojong terdiri atas beberapa dukuh dan lingkungan pemukiman yang tersebar secara merata. 
-          Struktur wilayahnya didominasi oleh lahan pertanian, perkebunan rakyat, serta padang rumput yang digunakan 
-          untuk kegiatan peternakan. Selain itu, terdapat pula area pemukiman penduduk, fasilitas umum, dan lahan 
-          produktif lainnya yang mendukung kehidupan sosial dan ekonomi masyarakat.
-        </p>
-        <p>
-          Kondisi topografi yang bervariasi serta ketersediaan sumber daya alam yang memadai menjadikan Desa Bojong 
-          memiliki potensi besar dalam pengembangan sektor <strong>agribisnis</strong> dan <strong>peternakan</strong>. 
-          Dukungan infrastruktur desa, seperti jalan penghubung antar dusun, sistem irigasi sederhana, dan akses ke 
-          pasar tradisional, turut memperkuat aktivitas ekonomi masyarakat desa.
-        </p>
-        <p>
-          Dengan potensi wilayah yang dimiliki, Desa Bojong terus berkembang menjadi desa yang mandiri, produktif, 
-          dan berdaya saing dalam mendukung pembangunan daerah.
-        </p>
-        </div>
+  <section id="profil-desa">
+    <div class="container">
+      <div class="text-center reveal">
+        <h2 class="section-heading text-uppercase">Profil Desa</h2>
+        <p class="section-subheading text-muted">Kenali lebih dekat wilayah geografis, potensi, serta arah pembangunan Desa Bojong</p>
       </div>
-
-      <!-- Potensi -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 profile-card" data-toggle="modal" data-target="#modalIframe" data-url="potensi.html">
-          <img src="img/profil/potensi.png" class="card-img-top" alt="Potensi Desa">
-          <div class="card-body text-center">
-            <h5 class="card-title">Potensi Desa</h5>
-            <p class="card-text"><p class="text-justify">
-<strong>Desa Bojong</strong> memiliki potensi utama di sektor pertanian dan peternakan. Kondisi tanah yang subur menjadikan desa ini sangat ideal untuk budidaya berbagai komoditas pertanian, khususnya <strong>jagung</strong> dan <strong>singkong</strong>. Kegiatan pertanian dilakukan dengan menggunakan bibit unggul guna mendukung peningkatan produktivitas serta kualitas hasil panen. Di sisi lain, sektor peternakan juga mengalami perkembangan yang cukup signifikan, seiring dengan meningkatnya kebutuhan masyarakat serta dukungan lingkungan yang mendukung pengembangan usaha ternak.
-Selain potensi di sektor pertanian dan peternakan, Desa Bojong juga memiliki kekuatan ekonomi lokal melalui sektor Usaha Mikro, Kecil, dan Menengah <strong>(UMKM)</strong>. Beberapa produk unggulan yang berkembang di masyarakat antara lain <strong>gethuk lindri</strong>, <strong>jamu bubuk tradisional</strong>, <strong>keripik tempe</strong>, dan <strong>peyek</strong>. Produk-produk ini tidak hanya menjadi sumber mata pencaharian warga, tetapi juga memiliki daya saing untuk dipasarkan secara lebih luas, baik di tingkat lokal maupun regional. Keberadaan UMKM ini turut memberikan kontribusi nyata terhadap pertumbuhan ekonomi desa dan menjadi salah satu pilar penggerak kesejahteraan masyarakat.
-</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Visi Misi -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 profile-card" data-toggle="modal" data-target="#modalIframe" data-url="visimisi.html">
-          <img src="img/profil/visi-misi.png" class="card-img-top" alt="Visi dan Misi">
-          <div class="card-body text-center">
-            <h5 class="card-title">Visi & Misi</h5>
-             <h4><strong>VISI:</strong></h4>
-    <ol>
-      <li>"Terwujudnya Desa Bojong yang aman, nyaman, sejahtera, dan mandiri."</li>
-      <li>"Masyarakat Desa Bojong yang berdaya saing, berbudaya, dan berakhlak mulia."</li>
-      <li>"Desa Bojong yang maju dalam ekonomi, sosial, dan budaya."</li>
-    </ol>
-    <h4><strong>MISI:</strong></h4>
-    <ol>
-      <li>"Meningkatkan kualitas sumber daya manusia melalui pendidikan dan pelatihan."</li>
-      <li>"Meningkatkan perekonomian masyarakat melalui pengembangan potensi desa."</li>
-      <li>"Meningkatkan infrastruktur dan sarana prasarana desa yang memadai."</li>
-      <li>"Meningkatkan kualitas pelayanan publik yang profesional dan transparan."</li>
-      <li>"Melestarikan budaya dan kearifan lokal desa."</li>
-    </ol>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <section id="berita-desa" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center section-heading">Berita Desa</h2>
-    <div class="row justify-content-center">
-
-      <!-- TMMD -->
-      <div class="col-md-6 mb-4">
-        <a href="https://boyolali.go.id/news/program-tmmd-di-bojong-wonosegoro-sukses-hubungkan-akses-transportasi-masyarakat" 
-           target="_blank" rel="noopener" class="text-decoration-none text-dark">
-          <div class="card h-100 shadow-sm">
-            <img src="img/berita/tmmd-bojong.jpeg" class="card-img-top" alt="Jalan TMMD di Bojong">
+      
+      <div class="row">
+        <!-- Wilayah -->
+        <div class="col-md-4 mb-4 reveal delay-100">
+          <div class="profile-card" data-profile-id="wilayah">
+            <div class="profile-image-container">
+              <img src="img/profil/wilayah.png" alt="Wilayah Desa">
+              <div class="profile-image-overlay"></div>
+            </div>
             <div class="card-body">
-              <h5>Jalan TMMD di Desa Bojong Kini Mulus</h5>
-              <p >Pembangunan dan betonisasi jalan lewat TMMD membantu mobilitas warga.</p>
-              <p class="text-primary small">Sumber: Boyolali.go.id</p>
+              <h5 class="card-title">Wilayah Desa</h5>
+              <p class="card-text">
+                Desa Bojong terletak di wilayah administratif Kecamatan Wonosegoro, Kabupaten Boyolali, Jawa Tengah. Kondisi topografi berupa dataran tinggi subur menjadikan daerah ini sejuk dan strategis.
+              </p>
+              <button class="btn-readmore">
+                Baca Selengkapnya
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
             </div>
           </div>
-        </a>
-      </div>
+        </div>
 
-      <!-- Kekeringan -->
-      <div class="col-md-6 mb-4">
-        <a href="https://solo.suaramerdeka.com/tag/desa-bojong" 
-           target="_blank" rel="noopener" class="text-decoration-none text-dark">
-          <div class="card h-100 shadow-sm">
-            <img src="img/berita/air-kekeringan-bojong.jpeg" class="card-img-top" alt="Krisis Air Desa Bojong">
+        <!-- Potensi -->
+        <div class="col-md-4 mb-4 reveal delay-200">
+          <div class="profile-card" data-profile-id="potensi">
+            <div class="profile-image-container">
+              <img src="img/profil/potensi.png" alt="Potensi Desa">
+              <div class="profile-image-overlay"></div>
+            </div>
             <div class="card-body">
-              <h5>Warga Bojong Konsumsi Air Sungai Akibat Kekeringan</h5>
-              <p>Kekeringan panjang memaksa warga mengambil air dari belik di sungai.</p>
-              <p class="text-primary small">Sumber: Suara Merdeka</p>
+              <h5 class="card-title">Potensi Ekonomi</h5>
+              <p class="card-text">
+                Pertanian jagung, singkong, dan sektor peternakan menjadi penopang utama ekonomi warga Bojong. Selain itu, produk kuliner lokal gethuk lindri dan kripik tempe turut menggerakkan UMKM desa.
+              </p>
+              <button class="btn-readmore">
+                Baca Selengkapnya
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
             </div>
           </div>
-        </a>
-      </div>
-      <!-- berita  -->
-      <div class="col-md-4 mb-4">
-        <a href="https://www.youtube.com/embed/2pgeorWSSKI" 
-           target="_blank" rel="noopener" class="text-decoration-none text-dark">
-          <div class="card h-100 shadow-sm">
-            <img src="img/video-thumb-bojong.jpg" class="card-img-top" alt="Vidio Profil Desa">
+        </div>
+
+        <!-- Visi Misi -->
+        <div class="col-md-4 mb-4 reveal delay-300">
+          <div class="profile-card" data-profile-id="visimisi">
+            <div class="profile-image-container">
+              <img src="img/profil/visi-misi.png" alt="Visi dan Misi">
+              <div class="profile-image-overlay"></div>
+            </div>
             <div class="card-body">
-                    <p>Video profil resmi Desa Bojong, Kec. Wonosegoro, Boyolali – menampilkan potensi, budaya, dan kehidupan masyarakat desa.</p>
-              <p class="text-primary small">Sumber: YouTube kknt desa bojong udb surakarta</p>
+              <h5 class="card-title">Visi & Misi</h5>
+              <p class="card-text">
+                Bertekad mewujudkan Desa Bojong yang aman, nyaman, sejahtera, dan mandiri, dengan meningkatkan kualitas SDM serta memanfaatkan kearifan lokal secara transparan dan profesional.
+              </p>
+              <button class="btn-readmore">
+                Baca Selengkapnya
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
             </div>
           </div>
-        </a>
-      </div>
-  </div>
-</section>
-
-<!-- Lokasi Desa Bojong -->
-<div class="container mt-5">
-  <div class="text-center">
-    <h3 class="section-heading text-uppercase">Lokasi Desa Bojong</h3>
-    <p class="section-subheading text-muted">Berikut adalah lokasi Desa Bojong di peta:</p>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-lg-10">
-      <div class="map-responsive">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.529042812865!2d110.6865!3d-7.2735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a05b4c8e8c203%3A0xf01d3f5258b10c39!2sBojong%2C%20Wonosegoro%2C%20Boyolali%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1650000000000"
-          width="100%"
-          height="400"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- Galeri Desa Bojong -->
-<section id="galeri" class="py-5 bg-light">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="section-heading text-uppercase">Galeri Desa Bojong</h2>
-      <p class="section-subheading text-muted">Kumpulan foto kegiatan Desa Bojong</p>
-    </div>
+  <!-- Berita Desa -->
+  <section id="berita-desa">
+    <div class="container">
+      <div class="text-center reveal">
+        <h2 class="section-heading text-uppercase">Berita & Media</h2>
+        <p class="section-subheading text-muted">Kabar terkini dan liputan seputar pembangunan di wilayah Desa Bojong</p>
+      </div>
+      
+      <div class="row">
+        <!-- TMMD -->
+        <div class="col-md-4 mb-4 reveal delay-100">
+          <a href="https://boyolali.go.id/news/program-tmmd-di-bojong-wonosegoro-sukses-hubungkan-akses-transportasi-masyarakat" 
+             target="_blank" rel="noopener" class="text-decoration-none text-dark card shadow-sm">
+            <div class="news-image-container">
+              <span class="news-badge">Pembangunan</span>
+              <img src="img/berita/tmmd-bojong.jpeg" class="card-img-top" alt="Jalan TMMD di Bojong">
+            </div>
+            <div class="card-body">
+              <h5>Jalan TMMD Desa Bojong Kini Mulus Terbetonisasi</h5>
+              <p>Program betonisasi jalan melalui TMMD sukses menghubungkan akses antar-dusun dan mempercepat ekonomi transportasi warga.</p>
+              <div class="news-source-meta">
+                <span>Selengkapnya di Boyolali.go.id</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </div>
+          </a>
+        </div>
 
-    <!-- Scrollable gallery -->
-    <div class="gallery-scroll">
-      <div class="gallery-wrapper">
-        <img src="img/galeri/1.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/2.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/3.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/4.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/5.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/6.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/7.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/8.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/9.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/10.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/11.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/12.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/13.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/14.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/15.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/16.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/17.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/18.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/19.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/20.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/21.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/22.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/23.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/24.jpg" alt="Foto Kegiatan Desa">
-        <img src="img/galeri/25.jpg" alt="Foto Kegiatan Desa">
+        <!-- Kekeringan -->
+        <div class="col-md-4 mb-4 reveal delay-200">
+          <a href="https://solo.suaramerdeka.com/tag/desa-bojong" 
+             target="_blank" rel="noopener" class="text-decoration-none text-dark card shadow-sm">
+            <div class="news-image-container">
+              <span class="news-badge">Info Sosial</span>
+              <img src="img/berita/air-kekeringan-bojong.jpeg" class="card-img-top" alt="Krisis Air Desa Bojong">
+            </div>
+            <div class="card-body">
+              <h5>Warga Bojong Andalkan Belik Sungai Akibat Kekeringan</h5>
+              <p>Menghadapi musim kemarau panjang, sebagian warga memanfaatkan rembesan belik dasar sungai untuk kebutuhan air bersih.</p>
+              <div class="news-source-meta">
+                <span>Selengkapnya di Suara Merdeka</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Video Profil -->
+        <div class="col-md-4 mb-4 reveal delay-300">
+          <div class="card shadow-sm video-trigger-card" data-video-url="https://www.youtube.com/embed/2pgeorWSSKI" style="cursor: pointer;">
+            <div class="news-image-container">
+              <span class="news-badge video-badge">Profil Video</span>
+              <div class="play-btn-overlay">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" stroke="none"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+              <img src="img/video-thumb-bojong.jpg" class="card-img-top" alt="Video Profil Desa">
+            </div>
+            <div class="card-body">
+              <h5>Tonton Video Profil Resmi Desa Bojong</h5>
+              <p>Melihat visualisasi potensi alam, geliat UMKM, kerajinan seni lokal, serta keseharian masyarakat ramah tamah Desa Bojong.</p>
+              <div class="news-source-meta">
+                <span>Putar Video via YouTube</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Footer -->
+  <!-- Peta Lokasi Desa Bojong -->
+  <section id="lokasi-desa" class="py-5">
+    <div class="container">
+      <div class="text-center reveal">
+        <h3 class="section-heading text-uppercase">Lokasi Desa</h3>
+        <p class="section-subheading text-muted">Peta geografis administrasi wilayah Desa Bojong, Wonosegoro</p>
+      </div>
+      <div class="row justify-content-center reveal delay-200">
+        <div class="col-lg-11">
+          <div class="map-card-wrapper">
+            <div class="map-responsive">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.529042812865!2d110.6865!3d-7.2735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a05b4c8e8c203%3A0xf01d3f5258b10c39!2sBojong%2C%20Wonosegoro%2C%20Boyolali%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1650000000000"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri Desa Bojong -->
+  <section id="galeri">
+    <div class="container">
+      <div class="text-center reveal">
+        <h2 class="section-heading text-uppercase">Galeri Dokumentasi</h2>
+        <p class="section-subheading text-muted">Kumpulan rekam jejak pembangunan dan ragam kegiatan kemasyarakatan di Bojong</p>
+      </div>
+
+      <!-- Scrollable gallery slider -->
+      <div class="gallery-scroll-container reveal delay-200">
+        <div class="gallery-scroll">
+          <div class="gallery-wrapper">
+            <div class="gallery-item-container">
+              <img src="img/galeri/1.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 1</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/2.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 2</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/3.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 3</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/4.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 4</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/5.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 5</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/6.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 6</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/7.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 7</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/8.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 8</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/9.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 9</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/10.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 10</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/11.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 11</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/12.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 12</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/13.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 13</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/14.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 14</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/15.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 15</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/16.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 16</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/17.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 17</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/18.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 18</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/19.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 19</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/20.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 20</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/21.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 21</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/22.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 22</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/23.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 23</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/24.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 24</span></div>
+            </div>
+            <div class="gallery-item-container">
+              <img src="img/galeri/25.jpg" alt="Kegiatan Desa Bojong">
+              <div class="gallery-item-overlay"><span>Kegiatan Desa Bojong 25</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Navigation Controls -->
+        <div class="gallery-controls">
+          <button class="gallery-control-btn gallery-prev-btn" aria-label="Previous image">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          </button>
+          <button class="gallery-control-btn gallery-next-btn" aria-label="Next image">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Structured Multi-column Footer -->
   <footer>
-    <div class="container text-center">
-      <p class="copyright">&copy; 2025 All Rights Reserved - KKNT UDB SURAKARTA Periode 7</p>
+    <div class="container">
+      <div class="row">
+        <!-- Brand / About Column -->
+        <div class="col-md-5 mb-4">
+          <div class="footer-logo">
+            <img src="img/logo.png" alt="Logo Boyolali">
+            <span>Desa Bojong</span>
+          </div>
+          <p class="footer-about-text pr-md-4">
+            Portal Informasi Resmi Desa Bojong, Kecamatan Wonosegoro, Kabupaten Boyolali. Kami berkomitmen untuk terus meningkatkan pelayanan publik, transparansi pembangunan, serta kemandirian ekonomi desa yang berkelanjutan.
+          </p>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="col-md-3 mb-4">
+          <h4 class="footer-heading">Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="#page-top">Home</a></li>
+            <li><a href="#about">Struktur Organisasi</a></li>
+            <li><a href="#profil-desa">Profil Wilayah & Potensi</a></li>
+            <li><a href="#berita-desa">Berita & Media</a></li>
+            <li><a href="#galeri">Galeri Dokumentasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="col-md-4 mb-4">
+          <h4 class="footer-heading">Hubungi Kami</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Kantor Balai Desa Bojong, Kec. Wonosegoro, Kabupaten Boyolali, Jawa Tengah 57372</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>info@desabojong.go.id</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright section -->
+      <div class="footer-bottom text-center">
+        <p class="copyright">&copy; 2025 KKN-T UDB Surakarta Periode 7. All Rights Reserved.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-  <script src="js/agency.min.js"></script>
-  <script src="js/custom-interaction.js"></script>
-  <script>
-  $('#modalIframe').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget); // Element yang klik
-    var url = button.data('url'); // Ambil data-url
-    $('#iframeModalContent').attr('src', url); // Set ke iframe
-  });
+  <!-- ========================================== -->
+  <!-- MODAL TEMPLATES (Hidden, loaded dynamically by JS) -->
+  <!-- ========================================== -->
 
-  // Bersihkan iframe saat modal ditutup
-  $('#modalIframe').on('hidden.bs.modal', function () {
-    $('#iframeModalContent').attr('src', '');
-  });
-</script>
-<script>
-  $(document).ready(function() {
-    $('.video-card, .profile-card').on('click', function() {
-      var url = $(this).data('url');
-      $('#iframeModalContent').attr('src', url);
-    });
-
-    $('#modalIframe').on('hidden.bs.modal', function () {
-      $('#iframeModalContent').attr('src', '');
-    });
-  });
-</script>
-<script>
-// ===== JavaScript Custom =====
-
-// Scroll reveal
-function revealOnScroll() {
-  const reveals = document.querySelectorAll('.reveal');
-  for (let i = 0; i < reveals.length; i++) {
-    const windowHeight = window.innerHeight;
-    const elementTop = reveals[i].getBoundingClientRect().top;
-    const elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add('active');
-    } else {
-      reveals[i].classList.remove('active');
-    }
-  }
-}
-window.addEventListener('scroll', revealOnScroll);
-
-// Smooth scroll
-document.querySelectorAll('a.js-scroll-trigger').forEach(link => {
-  link.addEventListener('click', function (e) {
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
-
-// Scroll to top button
-const btn = document.createElement('button');
-btn.innerText = '↑';
-btn.className = 'scroll-to-top';
-btn.style.cssText = 'position:fixed;bottom:30px;right:30px;display:none;padding:10px 15px;font-size:20px;background:#007bff;color:white;border:none;border-radius:50%';
-document.body.appendChild(btn);
-btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-window.addEventListener('scroll', () => {
-  btn.style.display = window.scrollY > 300 ? 'block' : 'none';
-});
-</script>
-  <script>
-    // Validasi form kontak
-    $(function() {
-      $('#contactForm input, #contactForm textarea').jqBootstrapValidation();
-    });
-  </script>
-  <script>
-  // Reveal effect on scroll
-  function revealOnScroll() {
-    const reveals = document.querySelectorAll('.reveal');
-    reveals.forEach(reveal => {
-      const windowHeight = window.innerHeight;
-      const elementTop = reveal.getBoundingClientRect().top;
-      const elementVisible = 100;
-      if (elementTop < windowHeight - elementVisible) {
-        reveal.classList.add('active');
-      } else {
-        reveal.classList.remove('active');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', revealOnScroll);
-  window.addEventListener('load', revealOnScroll);
-
-  // Smooth scroll
-  document.querySelectorAll('a.js-scroll-trigger').forEach(link => {
-    link.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-
-  // Scroll to top button
-  const btn = document.createElement('button');
-  btn.innerText = '↑';
-  btn.className = 'scroll-to-top';
-  btn.style.cssText = 'position:fixed;bottom:30px;right:30px;display:none;padding:10px 15px;font-size:20px;background:#007bff;color:white;border:none;border-radius:50%;z-index:9999';
-  document.body.appendChild(btn);
-  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  window.addEventListener('scroll', () => {
-    btn.style.display = window.scrollY > 300 ? 'block' : 'none';
-  });
-
-  <!-- Modal Video -->
-<div class="modal fade" id="modalIframe" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-body p-0">
-        <iframe id="iframeModalContent" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+  <!-- 1. Profile Modal -->
+  <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="profileModalTitle">Judul Profil</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="profileModalBody">
+          <!-- Dynamically populated -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</script>
-<script>
-  $(document).ready(function() {
-    $('.video-card').on('click', function () {
-      const url = $(this).data('url');
-      $('#iframeModalContent').attr('src', url);
-    });
 
-    $('#modalIframe').on('hidden.bs.modal', function () {
-      $('#iframeModalContent').attr('src', '');
-    });
-  });
-</script>
+  <!-- Hidden templates container for profile text -->
+  <div style="display: none;">
+    <!-- Template Wilayah -->
+    <div id="template-wilayah" class="modal-article">
+      <p>
+        <strong>Desa Bojong</strong> merupakan salah satu desa yang terletak di wilayah administratif <strong>Kecamatan Wonosegoro, Kabupaten Boyolali, Provinsi Jawa Tengah</strong>. Secara geografis, Desa Bojong berada pada koordinat <strong>7°16′9″ Lintang Selatan</strong> dan <strong>110°41′19″ Bujur Timur</strong>. Posisi strategis ini menempatkannya di kawasan dataran tinggi dengan kondisi alam yang relatif sejuk dan didukung oleh tingkat kesuburan tanah yang tinggi.
+      </p>
+      <p>
+        Wilayah Desa Bojong terbagi secara merata ke dalam beberapa dusun/dukuh dan rukun tetangga. Penataan ruang wilayah didominasi oleh lahan pertanian produktif, perkebunan rakyat, serta padang penggembalaan yang mendukung sektor peternakan secara masif. Di samping itu, terdapat pula kawasan pemukiman penduduk yang tertata, fasilitas umum seperti sekolah, rumah ibadah, balai warga, serta infrastruktur penunjang lainnya.
+      </p>
+      <p>
+        Topografi yang bervariasi dengan perbukitan landai dan dataran subur memberikan Desa Bojong potensi alamiah yang luar biasa dalam pengembangan agribisnis dan peternakan terintegrasi. Dukungan perbaikan akses jalan seperti jalan beton antardusun, perbaikan irigasi air, serta kedekatan ke pasar tradisional lokal turut memperkuat dan memutar roda perekonomian masyarakat secara berkelanjutan.
+      </p>
+    </div>
+
+    <!-- Template Potensi -->
+    <div id="template-potensi" class="modal-article">
+      <p>
+        <strong>Desa Bojong</strong> memiliki potensi utama yang sangat menjanjikan di sektor pertanian dan peternakan. Kondisi tanah vulkanik yang subur menjadikan desa ini pusat budidaya jagung hibrida dan singkong berkualitas tinggi. Warga memanfaatkan bibit unggul serta pengolahan pupuk organik mandiri untuk menaikkan produktivitas hasil panen. Di bidang peternakan, pemeliharaan sapi potong dan kambing terus bertumbuh karena ketersediaan pakan hijau yang melimpah sepanjang tahun.
+      </p>
+      <p>
+        Selain bertumpu pada hasil bumi mentah, Desa Bojong giat mendorong penguatan ekonomi kreatif lewat Usaha Mikro, Kecil, dan Menengah (UMKM). Berbagai produk olahan makanan khas desa kini dikemas lebih higienis dan modern, seperti:
+      </p>
+      <ol>
+        <li><strong>Gethuk Lindri Tradisional</strong>: Olahan singkong manis legit dengan warna-warni menarik.</li>
+        <li><strong>Jamu Bubuk Instan</strong>: Olahan rempah berkhasiat seperti kunyit dan jahe dalam bentuk bubuk instan siap seduh.</li>
+        <li><strong>Keripik Tempe & Peyek Gurih</strong>: Camilan renyah berkualitas ekspor rumahan.</li>
+      </ol>
+      <p>
+        Pemerintah desa aktif mengadakan pelatihan pengemasan produk (packaging) serta pemasaran digital guna membantu UMKM meluaskan jangkauan pasar hingga tingkat regional dan nasional.
+      </p>
+    </div>
+
+    <!-- Template Visi Misi -->
+    <div id="template-visimisi" class="modal-article">
+      <h4>VISI DESA BOJONG</h4>
+      <ol>
+        <li>Terwujudnya Desa Bojong yang aman, nyaman, sejahtera, dan mandiri secara ekonomi dan kelembagaan.</li>
+        <li>Masyarakat Desa Bojong yang berdaya saing tinggi, memegang teguh adat budaya leluhur, serta berakhlak mulia.</li>
+        <li>Desa Bojong yang maju di bidang infrastruktur fisik, sosial kemasyarakatan, dan kelestarian ekologi.</li>
+      </ol>
+      
+      <h4>MISI DESA BOJONG</h4>
+      <ol>
+        <li>Meningkatkan kualitas Sumber Daya Manusia (SDM) melalui penyediaan akses pendidikan, pelatihan berkala, dan peningkatan fasilitas kesehatan masyarakat.</li>
+        <li>Mengoptimalkan perekonomian lokal melalui pembinaan UMKM, modernisasi pertanian/peternakan, serta digitalisasi pasar desa.</li>
+        <li>Melakukan percepatan pembangunan infrastruktur sarana prasarana jalan, irigasi, sanitasi, dan penerangan jalan umum yang merata.</li>
+        <li>Meningkatkan mutu pelayanan publik kantor balai desa yang cepat, profesional, transparan, serta bebas dari pungli.</li>
+        <li>Melestarikan kebudayaan lokal, kesenian daerah, serta kerukunan kehidupan umat beragama di Desa Bojong.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- 2. Video Player Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="videoModalIframe" class="embed-responsive-item" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Image Zoom / Lightbox Modal for Struktur Desa -->
+  <div class="modal fade" id="imageLightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+      <div class="modal-content" style="background: transparent; box-shadow: none;">
+        <div class="modal-body p-0 text-center">
+          <img src="img/struktur-pemerintah-desa.jpg" class="img-fluid rounded shadow-lg" style="max-height: 85vh; object-fit: contain;" alt="Struktur Pemerintah Desa Bojong">
+          <p class="text-white mt-3 font-weight-bold">Struktur Aparatur Pemerintah Desa Bojong</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core JavaScript Libraries -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Modern Interactive JavaScript -->
+  <script src="js/custom-interaction.js"></script>
+
 </body>
+</html>
