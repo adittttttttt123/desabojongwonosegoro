@@ -3,9 +3,6 @@
  * Designed with modern, clean forest green & gold palette, smooth typography, and glassmorphic micro-interactions.
  */
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
-
 :root {
   /* Theme Colors */
   --primary-color: #064e3b;          /* Deep Emerald Green */
@@ -117,9 +114,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-custom .navbar-brand span {
-  background: linear-gradient(135deg, #ffffff 40%, var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--white);
+}
+
+@supports (-webkit-background-clip: text) {
+  .navbar-custom .navbar-brand span {
+    background: linear-gradient(135deg, #ffffff 40%, var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .navbar-custom .nav-link {
@@ -160,13 +163,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-toggler {
-  border: none;
-  background: transparent;
-  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
 }
 
 .navbar-toggler:focus {
   outline: none;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.2);
+}
+
+/* Mobile responsive menu dropdown card style */
+@media (max-width: 991px) {
+  .navbar-custom .navbar-collapse {
+    background: rgba(6, 78, 59, 0.98);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .navbar-custom .nav-link {
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 10px 20px !important;
+  }
+  .navbar-custom .nav-link::after {
+    display: none;
+  }
 }
 
 /* ======= Masthead (Hero Section) ======= */
@@ -174,7 +200,7 @@ header.masthead {
   background: linear-gradient(185deg, rgba(6, 78, 59, 0.85) 0%, rgba(15, 23, 42, 0.9) 100%), 
               url('../img/header-bg.jpg') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll; /* Changed to scroll to prevent mobile zoom-glitches */
   padding-top: 180px;
   padding-bottom: 140px;
   text-align: center;
@@ -185,10 +211,11 @@ header.masthead {
   position: relative;
 }
 
-.intro-text {
-  background: transparent;
-  padding: 0;
-  animation: none;
+/* Override Agency theme's massive masthead paddings on desktop */
+header.masthead .intro-text {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  width: 100%;
 }
 
 .intro-lead-in {
@@ -283,21 +310,30 @@ header.masthead .btn-warning:hover {
 
 /* ======= Section Common Layout ======= */
 section {
-  padding: 100px 0;
+  padding: 80px 0;
+  scroll-margin-top: 80px; /* Offset scroll target position for fixed header */
 }
 
-.section-heading {
-  font-size: 2.75rem;
-  font-weight: 800;
-  font-family: var(--font-heading);
+@media (min-width: 768px) {
+  section {
+    padding: 100px 0;
+  }
+}
+
+section .section-heading {
+  font-size: 2.75rem !important;
+  font-weight: 800 !important;
+  font-family: var(--font-heading) !important;
   letter-spacing: -0.5px;
-  color: var(--text-dark);
-  margin-bottom: 12px;
+  color: var(--text-dark) !important;
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
   position: relative;
   display: inline-block;
+  text-transform: uppercase;
 }
 
-.section-heading::after {
+section .section-heading::after {
   content: '';
   display: block;
   width: 60px;
@@ -307,11 +343,13 @@ section {
   border-radius: 2px;
 }
 
-.section-subheading {
-  font-size: 1.1rem;
-  color: var(--text-muted);
-  font-weight: 500;
-  margin-bottom: 60px;
+section .section-subheading {
+  font-size: 1.1rem !important;
+  color: var(--text-muted) !important;
+  font-weight: 500 !important;
+  font-style: normal !important; /* Reset italic droid serif from agency.css */
+  font-family: var(--font-body) !important;
+  margin-bottom: 60px !important;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -331,6 +369,12 @@ section {
   transition: var(--transition-smooth);
   display: inline-block;
   max-width: 100%;
+}
+
+@media (max-width: 576px) {
+  .struktur-card-wrapper {
+    padding: 12px;
+  }
 }
 
 .struktur-card-wrapper:hover {
@@ -502,6 +546,12 @@ section {
   transition: var(--transition-smooth);
   background: var(--white);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#berita-desa a.card:hover {
+  text-decoration: none;
 }
 
 #berita-desa .card:hover {
@@ -549,26 +599,31 @@ section {
 
 #berita-desa .card-body {
   padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 #berita-desa h5 {
   font-family: var(--font-heading);
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--text-dark);
+  color: var(--text-dark) !important;
   line-height: 1.4;
   margin-bottom: 12px;
   transition: var(--transition-fast);
 }
 
+#berita-desa a.card:hover h5,
 #berita-desa .card:hover h5 {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 #berita-desa p {
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
+  flex-grow: 1;
 }
 
 .news-source-meta {
@@ -664,6 +719,13 @@ section {
   height: 240px;
   width: 320px;
   transition: var(--transition-smooth);
+}
+
+@media (max-width: 576px) {
+  .gallery-item-container {
+    height: 180px;
+    width: 240px;
+  }
 }
 
 .gallery-item-container img {
@@ -854,6 +916,7 @@ footer {
   padding: 80px 0 30px;
   border-top: 4px solid var(--primary-color);
   font-size: 0.95rem;
+  text-align: left; /* Reset text-align center from global theme */
 }
 
 .footer-logo {
@@ -945,6 +1008,7 @@ footer {
   margin-bottom: 0;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
 
 /* ======= Back to Top Button ======= */
@@ -1047,15 +1111,15 @@ footer {
   background: #000;
 }
 
-/* ======= Reveal-on-Scroll Animations ======= */
-.reveal {
+/* ======= Reveal-on-Scroll Animations (with JS Enabled fallback) ======= */
+body.js-enabled .reveal {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
               transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.reveal.revealed {
+body.js-enabled .reveal.revealed {
   opacity: 1;
   transform: translateY(0);
 }

@@ -5,6 +5,7 @@
 // ==========================================
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.add('js-enabled');
   initNavbarScroll();
   initScrollSpy();
   initScrollReveal();
